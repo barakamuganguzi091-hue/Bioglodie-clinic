@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+  /* Primary Brand */
+  --color-primary: #2F80ED;
+  --color-primary-light: #5B9DF4;
+  --color-primary-dark: #1D5FBF;
+
+  /* Backgrounds */
+  --color-background: #FFFFFF;
+  --color-section: #F8F8F6;
+  --color-soft-blue: #EAF4FF;
+  --color-card: #FFFFFF;
+
+  /* Text */
+  --color-heading: #1F2937;
+  --color-body: #6B7280;
+  --color-muted: #9CA3AF;
+  --color-white: #FFFFFF;
+
+  /* Borders */
+  --color-border: #E5E7EB;
+  --color-border-light: #F1F5F9;
+
+  /* Status Colors */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+
+
+
+  /* Typography */
+  --font-primary: "Poppins", sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
+  --font-nunito: 'Nunito Sans', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-source: 'Source Sans 3', sans-serif;
+
+}  
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: var(--color-border-light);
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 4rem; 
+}
+nav{
+    width: 80%;
+    margin-left: auto;
+}
+a{ 
+    text-decoration: none;
+}
+.Bioglodie-text{
+    color: var(--color-primary-dark);
+    font-size: 22px;
+}
+
+li {
+    list-style-type: none; 
+    font-size: var(--fs-lg);
+    font-weight: bold;
+    color: var(--color-heading);
+}
+
+
+.header-btn{
+   padding: 0.76rem 0.96rem;
+   background-color: rgb(0, 55, 255);
+   border: none;
+   margin: 1rem;
+   margin-right:  auto;
+   font-size: var(--fs-lg);
+   border-radius: 2rem;
+   color: var(--color-background);
+   font-family: var(--font-manrope);
+   font-weight: bold;
+}
+/*NAVIGATION HOVERS AND DESIGNS*/
+.header-btn:hover{
+   transition: 100ms;
+   opacity: 70%;
+   cursor: pointer;
+}
+li:hover{
+    background-color: var(--color-primary-dark);
+    color: var(--color-border-light);
+    padding: 5px 8px;
+    border-color: var(--color-heading);
+    border-radius: 5px;
+    transition: 250ms;
+    transform: 1.02;
+}
+/*HOME PAGE DESIGNS STARTS*/
+#doctor-image{
+    max-width: 100%;
+    object-fit: contain;
+    min-width: 400px;
+    position: relative;
+}
+.doctor-image-container{
+    padding-right:  1rem;
+
+}
+.home-text-container{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.home-btn2{
+    padding: 0.7rem 1.5rem;
+    color: var(--color-heading);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--color-border);
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.home-btn2:hover{
+transition: 100ms;
+opacity: 60%;
+cursor: pointer;
+}
+
+
+h1{
+    color: var(--color-background);
+    margin-bottom: 1rem;
+    font-size: 40px;
+}
+.home-paragraph{
+      color: var(--color-background);
+      margin: 5px;
+      font-family:'Manrope', sans-serif;
+      font-size: large;
+}
+.Bioglodie-content{
+  display: none;
+}
+/*ARTICLE NUMBER ONE*/
+.article-1{
+    background-color: var(--color-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    width: 80%;
+    background-color: #1D5FBF;
+    text-align: center;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 30px;
+    color: var(--color-border);
+    
+}
+.article-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    width: 90%;
+    background-color: var(--color-background); 
+}
+.article-image{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px; 
+}
+.doctor-container{
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px;
+    
+
+
+}
+.doctor-container:hover{
+    transition: 300ms;
+    transform: scale(1.09);
+    box-shadow: 5px 5px 50px 5px rgb(1, 62, 93);
+    border-radius: 10px;
+    background-color: rgb(245, 227, 194);
+}
+
+
+.article-child{
+border-radius: 10px;
+background: linear-gradient( to top, rgba(0,0,0,0.4));
+width: 100%;
+padding: 10px;
+font-family: var(--font-poppins);
+margin: 5px auto;
+
+}
+/*DRUGS CATEGORIES*/
+#drugs-section{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ margin-bottom: 1rem;
+ 
+}
+.drugs-head{
+    background-color: rgb(245, 227, 194);
+    color: black;
+    text-align: center;
+    margin: 1rem;
+}
+.drugs-container{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 1rem;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+}
+.drugs-items{
+  background-color: var(--color-section);
+  padding: 1.2rem;
+  border-radius: 10px;
+  border:  solid 1px var(--color-success);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold ;
+}
+
+.drugs-items:hover{
+  color: #ffffff;
+  background-color: var(--color-primary-dark);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 300ms;
+  }
+  /*ABOUT SECTION STARTS HERE*/
+  #about{
+ background-color: wheat;
+ width: 87%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin: 1rem auto;
+ border-radius: 1rem;
+  }
+  .about-container{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    gap: 2rem;
+  }
+  #about-doctor-image{
+ max-width: 100%;
+ border-radius: 20px;
+ padding: 1rem;
+ border-radius: 2rem;
+  }
+
+.about-image-container{
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+}
+.about-paragraph{
+    font-family: var(--font-poppins);
+}
+.about-text{
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.about-head2{
+font-size: 2rem;
+}
+.about-head3{
+    font-size: 1rem;
+}
+.about-btn{
+    padding:  13px 20px;
+    margin: 1rem;
+    border-radius: 24px;
+    border: dotted 3px rgb(0, 179, 255);
+    font-weight: bolder;
+    font-size: 17px;
+}
+.about-btn:hover{
+  color: #ffffff;
+  background-color: var(--color-primary-dark);
+  border: solid 1px black ;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 300ms;
+  
+}
+/*ABOUT US DOCUMENTATION*/
+#about-us{
+   width: 90%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin: 1.5rem auto;
+ border-radius: 1rem;
+}
+#about-us-image{
+    max-width: 100%;
+    border-radius: 20px;
+}
+.about-us-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.about-us-text-container{
+    width: 130%;
+    line-height: 1.5;
+}
+.about-us-head3{
+    color: var(--color-primary);
+    margin: 6px;
+}
+.about-us-head4{
+    font-size: 1.5rem;
+}
+.read-more{
+    color: #1D5FBF;
+    font-weight: bold;
+
+}
+.more-paragraph{
+    display: none;
+}
+/*FORM AND BOOKINGS*/
+
+form{
+    background: linear-gradient(to top, rgb(29, 45, 106),rgb(0, 94, 255)) ;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+#name{
+    padding: 0.7rem 4rem;
+    border-radius: 10px;
+    border: none;
+}
+#email{
+  padding: 0.7rem 4rem;
+    border-radius: 10px;
+    border: none;
+}
+#problem{
+    padding: 0.7rem 4rem;
+    border-radius: 10px;
+    border: none;
+}
+#text{
+    padding: 3rem 4rem;
+    border-radius: 10px;
+    border: none;
+}
+.form-btn{
+    padding: 0.5rem 7rem;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--color-success);
+}
+input::placeholder{
+   position: relative;
+   right: 50px;
+}
+.booking-paragraph{
+    color: white;
+    font-weight: bold;
+}
+h6{
+    font-size: 1.5rem;
+}
+.first-question{
+    display: inline-block;
+}
+#rotate{
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform: rotate(90deg);
+}
+
+
+
+
+/*Media Querries Start here*/
+/*BIG SCREENS*/
+@media (max-width: 1178px) {
+    .home-text-container{
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+
+.header-btn{
+    font-size: 14px;
+    padding: 10px 20px;
+}
+h1{
+    font-size: 20px;
+}
+.home-paragraph{
+    font-size: 15px;
+}
+
+ 
+
+}   
+@media(max-width:997px){
+
+    .home-text-container{
+    display: none;
+}
+.about-container{
+    flex-direction: column;
+  }
+  .about-us-container{
+    flex-direction: column;
+  }
+  .about-us-text-container{
+    margin: 10px;
+    width: 100%;
+  }
+
+
+.drugs-head{
+    font-size: 17px;
+}
+header{
+    display: none;
+}
+.drugs-container{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+
+}
+.article-container{
+    flex-direction: column;  
+}     
+.doctor-image-container{
+    display: none;
+}
+
+}
+/*SMART PHONES*/
+@media (max-width:421px) {
+.home-paragraph{
+    font-size: 15px;
+    width: 340px;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-card);
+    border-radius: 10px;
+}
+body{
+    display: flex;
+    flex-direction: column-reverse;
+}
+h2{
+    font-size: 15px;
+}
+.about-text{
+    padding: 15px;
+    margin: 10px;
+}
+
+.drugs-container{
+    grid-template-columns: 2fr;
+}
+.article-container{
+    flex-direction: column;  
+}
+.Bioglodie-content{
+   display: none;}
+#doctor-image{
+    margin-right: 10px;
+}
+}
+
+@media (max-width:390px) {
+#doctor-image-container{
+    padding: 1rem;
+}
+
+.Bioglodie-content{
+    display: none;
+}
+
+
+.home-text-container{
+    display: none;
+}   
+
+.article-container{
+    flex-direction: column;    
+}
+
+h2{
+    font-size: 23px;
+}
+.drugs-container{
+    grid-template-columns: 1fr;
+}
+}
