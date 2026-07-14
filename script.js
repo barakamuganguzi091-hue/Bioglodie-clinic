@@ -18,14 +18,9 @@ readMore.addEventListener("click", function () {
 })
 
 //Loops loops
-let youth = "Anyone between 13 yrs to 19 yrs"
-function greetUser (time,name) {
-    console.log( `Good ${time}, ${name}`);
-}
 
-greetUser ("Morning","John")
-greetUser ("Night","Mark angel Comedy")
-greetUser ("Day","Baraka Builds")
+
+
 
 
 
